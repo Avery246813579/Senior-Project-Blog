@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Senior Project Blog</title>
+
+    <script src="js/sha512.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<style>
+    /*@font-face {*/
+    /*font-family: "Abeezee";*/
+    /*src: url('images/abeezee.regular.ttf');*/
+    /*}*/
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body, #fullheight {
+        min-height: 100% !important;
+        height: 100%;
+    }
+
+    html {
+        background-color: #70CBDD;
+    }
+
+    #overlay {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    #content {
+        position: relative;
+        top: 10%;
+        background-color: #F3F3F4;
+        margin: auto;
+        width: 50%;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 5%;
+    }
+
+    .title {
+        font-size: 50px;
+        color: black;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 20px;
+        color: darkgray;
+        text-align: center;
+    }
+
+    .body {
+        padding-top: 25px;
+        font-size: 20px;
+    }
+</style>
+
+<script>
+
+</script>
+<body>
+
+<div id="overlay">
+    <div id="content">
+        <div class="title">
+            Planning for Service Learning
+        </div>
+
+        <div class="date">
+            Tuesday, October 4, 2016
+        </div>
+
+        <div class="body">
+            <b>What type of service did I choose?</b>
+            <br><br>
+            I choose Indirect Service. The reason I choose Indirect Service is because I wanted my project to impact people. I personally think it's the most efficient way to impact the most people.
+            <br><br>
+            <b>What's my essential question?</b>
+            <br><br>
+            Fill this in
+            <br><br>
+            <b>What content will my project be on?</b>
+            <br><br>
+            My project will be on helping communities manage service opportunities. I want to make an easier and more efficient way to find, host, and track communitiy service, and my project will be the answer.
+            <br><br>
+            <b>What community and community needs does my project address?</b>
+            <br><br>
+            The primary group my project addresses is the community service community. More in particular I will be addressing the need for easier and more available ways to host, find, and track community service opportunities.
+            <br><br>
+            <b>What is my service name and slogan?</b>
+            <br><br>
+            Commservus: Find, host, and track your community's service needs.
+            <br><br>
+            <b>What skills will I developing during the duration of the project?</b>
+            <br><br>
+            I will be learning new programming skills and also improving my past knowledge. In addition to these obvious skills, I will also be learn more about community service and how it impacts the community.
+            <br><br>
+            <b>What material will I consult for this project?</b>
+            <br><br>
+            A lot of services like Amazon Web Services and Github will help by hosting code. I can learn new information from youtube videos and stackoverflow as well.
+            <br><br>
+            <b>Who in the community will help with my project?</b>
+            <br><br>
+            I believe their is a staff member at our school who mangages community service, and getting in contact with her will be vital. I will need to talk to her about how to implement my new system and what needs to be added.
+            <br><br>
+            <b>How long will my project last?</b>
+            <br><br>
+            This project should last for a while, but the development time should take the full year.
+            <br><br>
+            <b>How will I inform the community of my progress?</b>
+            <br><br>
+            I will try and get my services implemented into our school system and advertise it to other schools.
+            <br><br>
+            <b>What tangible product will I be producing?</b>
+            <br><br>
+            I will be making a android, ios, and windows application. Along with those I will also be making a website and server.
+        </div>
+    </div>
+</div>
+
+<script>
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function () {
+            if (rawFile.readyState === 4) {
+                if (rawFile.status === 200 || rawFile.status == 0) {
+                    callback(rawFile.responseText);
+                } else {
+                    console.log("ERROR");
+                }
+            }
+        };
+
+        rawFile.send(null);
+    }
+
+    readTextFile("blogs/testblog.txt", function (callback) {
+        console.dir(callback);
+    });
+
+    var testString = "I LOVE DOGS";
+    readTextFile("config.json", function (callback) {
+        var text = JSON.parse(callback);
+        console.dir(text['PASSWORD']);
+        console.dir(sha512(testString).toUpperCase());
+
+        if (text['PASSWORD'] == sha512(testString).toUpperCase()) {
+            console.log("Yes");
+        } else {
+            console.log("No");
+        }
+    });
+
+</script>
+
+</body>
+</html>
