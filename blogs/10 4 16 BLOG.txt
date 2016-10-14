@@ -1,0 +1,53 @@
+        <div class="title">
+            Planning for Service Learning
+        </div>
+
+        <div class="date">
+            Tuesday, October 4, 2016
+        </div>
+
+        <div class="body">
+            <b>What type of service did I choose?</b>
+            <br><br>
+            I choose Indirect Service. The reason I choose Indirect Service is because I wanted my project to impact people. I personally think it's the most efficient way to impact the most people.
+            <br><br>
+            <b>What's my essential question?</b>
+            <br><br>
+            In what ways does the community display community service opportunites, and in what ways can it be improve?
+            <br><br>
+            <b>What content will my project be on?</b>
+            <br><br>
+            My project will be on helping communities manage service opportunities. I want to make an easier and more efficient way to find, host, and track communitiy service, and my project will be the answer.
+            <br><br>
+            <b>What community and community needs does my project address?</b>
+            <br><br>
+            The primary group my project addresses is the community service community. More in particular I will be addressing the need for easier and more available ways to host, find, and track community service opportunities.
+            <br><br>
+            <b>What is my service name and slogan?</b>
+            <br><br>
+            Commservus: Find, host, and track your community's service needs.
+            <br><br>
+            <b>What skills will I developing during the duration of the project?</b>
+            <br><br>
+            I will be learning new programming skills and also improving my past knowledge. In addition to these obvious skills, I will also be learn more about community service and how it impacts the community.
+            <br><br>
+            <b>What material will I consult for this project?</b>
+            <br><br>
+            A lot of services like Amazon Web Services and Github will help by hosting code. I can learn new information from youtube videos and stackoverflow as well.
+            <br><br>
+            <b>Who in the community will help with my project?</b>
+            <br><br>
+            I believe their is a staff member at our school who mangages community service, and getting in contact with her will be vital. I will need to talk to her about how to implement my new system and what needs to be added.
+            <br><br>
+            <b>How long will my project last?</b>
+            <br><br>
+            This project should last for a while, but the development time should take the full year.
+            <br><br>
+            <b>How will I inform the community of my progress?</b>
+            <br><br>
+            I will try and get my services implemented into our school system and advertise it to other schools.
+            <br><br>
+            <b>What tangible product will I be producing?</b>
+            <br><br>
+            I will be making a android, ios, and windows application. Along with those I will also be making a website and server.
+        </div>
