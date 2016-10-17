@@ -51,18 +51,18 @@ for (var i = 0; i < blogsFiles.length; i++) {
     })();
 }
 
-update();
-function update(){
+update(true);
+function update(sIndex) {
     if (index > 0 || index < blogsFiles.length - 1) {
-        if(index > 0){
+        if (index > 0) {
             older.style.display = "block";
-        }else{
+        } else {
             older.style.display = "none";
         }
 
-        if(index < blogsFiles.length - 1){
+        if (index < blogsFiles.length - 1) {
             newer.style.display = "block";
-        }else{
+        } else {
             newer.style.display = "none";
         }
 
@@ -72,5 +72,9 @@ function update(){
     }
 
     content.innerHTML = blogsHtml[blogsFiles[index]];
-    history.pushState(undefined, 'Senior Project', ref + '?i=' + index);
+
+    console.dir(sIndex);
+    if (typeof sIndex == "undefined") {
+        history.pushState(undefined, 'Senior Project', ref + '?i=' + index);
+    }
 }
